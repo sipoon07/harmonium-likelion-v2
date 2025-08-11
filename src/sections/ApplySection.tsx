@@ -3,7 +3,7 @@ import styles from "./ApplySection.module.css";
 export default function ApplySection() {
   // TODO: 아래 URL을 본인 Google Form 링크로 교체하세요.
   const GOOGLE_FORM_URL =
-    "https://docs.google.com/forms/d/e/1FAIpQLScVJgEiLJFIFvfxRgQn44LVHW8HS2dquzWU0u0bMtmAK736gg/viewform";
+    "https://docs.google.com/forms/d/e/1FAIpQLScLAW9bgYpOyboeV-WFaaAWHA6_GsSNkJ0FTRJ1JIiqqpWHuw/viewform?usp=dialog";
 
   return (
     <section id="apply" className={styles.wrap}>
