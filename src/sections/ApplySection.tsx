@@ -1,4 +1,4 @@
-import React, { FormEvent } from "react";
+import { FormEvent } from "react";
 
 export default function ApplySection(): JSX.Element {
   function handleSubmit(e: FormEvent<HTMLFormElement>): void {
