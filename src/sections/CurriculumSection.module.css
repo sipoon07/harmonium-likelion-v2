@@ -3,7 +3,7 @@
 .title{ font-size:1.25rem; font-weight:800 }
 .grid{
   margin-top:1.25rem;
-  display:grid; gap:3rem;
+  display:grid; gap:2.5rem;
   grid-template-columns:1fr;
 }
 @media (min-width:640px){
