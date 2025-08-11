@@ -16,7 +16,7 @@ export default function ApplySection() {
           rel="noopener noreferrer"
           className={styles.submit}
         >
-          구글 폼 열기
+          지금 바로 신청하기
         </a>
       </div>
     </section>
