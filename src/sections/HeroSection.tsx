@@ -22,8 +22,8 @@ export default function HeroSection() {
     <section id="about" className={styles.wrap}>
       <div className={styles.inner}>
         <h1 className={styles.title}>
-          자기소개서를 작성하시는데
-          <br className={styles.br} /> 막막하시나요?
+          아직도 혼자서 자기소개서를 작성하시나요?
+          <br className={styles.br} /> 이 강의를 들어보시고 생성형 AI 자기소개서를 작성해보세요!
         </h1>
 
         <div className={styles.ctaRow}>
