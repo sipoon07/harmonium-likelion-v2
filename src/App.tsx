@@ -3,16 +3,17 @@ import HeroSection from "./sections/HeroSection";
 import CurriculumSection from "./sections/CurriculumSection";
 import ApplySection from "./sections/ApplySection";
 import FaqSection from "./sections/FaqSection";
+import styles from "./App.module.css";
 
-export default function App(): JSX.Element {
+export default function App() {
   return (
-    <div className="min-h-screen text-gray-900">
+    <div className={styles.app}>
       <Header />
       <HeroSection />
       <CurriculumSection />
       <ApplySection />
       <FaqSection />
-      <footer className="bg-gray-100 py-10 text-center text-xs text-gray-500">
+      <footer className={styles.footer}>
         © {new Date().getFullYear()} LikeLion. All rights reserved.
       </footer>
     </div>

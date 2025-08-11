@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import styles from "./CTAButton.module.css";
 
 type Props = {
   href?: string;
@@ -14,23 +15,21 @@ export default function CTAButton({
   className = "",
   children,
   onClick,
-}: Props): JSX.Element {
-  const base = "rounded-2xl px-5 py-2 text-sm transition shadow";
-  const styles =
+}: Props) {
+  const cls =
     variant === "primary"
-      ? "bg-gray-900 text-white hover:opacity-95 hover:shadow-md"
-      : "border border-gray-900/20 hover:bg-white/60";
+      ? `${styles.btn} ${styles.primary}`
+      : `${styles.btn} ${styles.secondary}`;
 
   if (href) {
     return (
-      <a href={href} className={`${base} ${styles} ${className}`}>
+      <a href={href} className={`${cls} ${className}`}>
         {children}
       </a>
     );
   }
-
   return (
-    <button type="button" onClick={onClick} className={`${base} ${styles} ${className}`}>
+    <button type="button" onClick={onClick} className={`${cls} ${className}`}>
       {children}
     </button>
   );

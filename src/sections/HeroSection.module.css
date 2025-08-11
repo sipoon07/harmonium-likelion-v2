@@ -1,0 +1,21 @@
+.wrap{
+  background:var(--bg-soft);
+}
+.inner{
+  max-width:64rem; margin:0 auto; padding:6rem 1.5rem;
+  text-align:center; display:grid; place-items:center;
+}
+.title{
+  font-size:clamp(1.5rem, 2vw + 1rem, 2rem);
+  font-weight:700; line-height:1.35; letter-spacing:-.02em;
+}
+.br{ display:none }
+@media (min-width:640px){ .br{ display:inline } }
+
+.ctaRow{
+  margin-top:1.5rem;
+  display:flex; flex-direction:column; gap:.75rem; align-items:center;
+}
+@media (min-width:640px){
+  .ctaRow{ flex-direction:row }
+}

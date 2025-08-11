@@ -1,0 +1,15 @@
+.item{
+  border:1px solid #e5e7eb; border-radius:var(--radius-xl);
+  background:#fff; padding:1.1rem 1.2rem; box-shadow:var(--shadow-soft);
+}
+.button{
+  width:100%; display:flex; align-items:center; justify-content:space-between;
+  background:none; border:none; cursor:pointer; text-align:left; padding:0;
+}
+.q{ font-weight:600 }
+.icon{ font-size:1.2rem; line-height:1 }
+.answer{
+  color:var(--text-soft);
+  line-height:1.7; margin-top:.4rem; display:none;
+}
+.show{ display:block }

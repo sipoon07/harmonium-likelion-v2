@@ -1,26 +1,26 @@
 import { useState } from "react";
+import styles from "./FaqItem.module.css";
 
 type Props = { q: string; a: string };
 
-export default function FaqItem({ q, a }: Props): JSX.Element {
-  const [open, setOpen] = useState<boolean>(false);
+export default function FaqItem({ q, a }: Props) {
+  const [open, setOpen] = useState(false);
+  const id = `faq-${q.replace(/\s+/g, "-")}`;
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+    <div className={styles.item}>
       <button
+        className={styles.button}
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center justify-between text-left"
         aria-expanded={open}
-        aria-controls={`faq-${q}`}
+        aria-controls={id}
       >
-        <span className="font-medium">{q}</span>
-        <span className="text-xl">{open ? "−" : "+"}</span>
+        <span className={styles.q}>{q}</span>
+        <span className={styles.icon}>{open ? "−" : "+"}</span>
       </button>
-      {open && (
-        <p id={`faq-${q}`} className="mt-3 text-gray-600 leading-relaxed">
-          {a}
-        </p>
-      )}
+      <div id={id} className={`${styles.answer} ${open ? styles.show : ""}`}>
+        <p>{a}</p>
+      </div>
     </div>
   );
 }

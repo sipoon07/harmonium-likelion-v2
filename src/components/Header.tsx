@@ -1,3 +1,5 @@
+import styles from "./Header.module.css";
+
 type NavItem = { id: string; label: string };
 
 const items: NavItem[] = [
@@ -7,17 +9,13 @@ const items: NavItem[] = [
   { id: "faq", label: "FAQ" },
 ];
 
-export default function Header(): JSX.Element {
+export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-gray-700 text-gray-100">
-      <nav className="mx-auto flex max-w-5xl items-center justify-center gap-10 py-3">
-        {items.map((item) => (
-          <a
-            key={item.id}
-            href={`#${item.id}`}
-            className="text-sm tracking-tight hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-white/60 rounded px-1"
-          >
-            {item.label}
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        {items.map((it) => (
+          <a key={it.id} href={`#${it.id}`} className={styles.link}>
+            {it.label}
           </a>
         ))}
       </nav>

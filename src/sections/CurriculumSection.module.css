@@ -1,0 +1,15 @@
+.wrap{ background:var(--bg-muted) }
+.inner{ max-width:64rem; margin:0 auto; padding:4rem 1.5rem }
+.title{ font-size:1.25rem; font-weight:800 }
+.grid{
+  margin-top:1.25rem;
+  display:grid; gap:1rem;
+  grid-template-columns:1fr;
+}
+@media (min-width:640px){
+  .grid{ grid-template-columns:1fr 1fr }
+}
+.card{
+  border:1px solid #e5e7eb; border-radius:var(--radius-xl);
+  background:#fff; padding:1.25rem; box-shadow:var(--shadow-soft);
+}
