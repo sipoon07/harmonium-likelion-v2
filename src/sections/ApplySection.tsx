@@ -8,7 +8,7 @@ export default function ApplySection() {
   return (
     <section id="apply" className={styles.wrap}>
       <div className={styles.inner}>
-        <h2 className={styles.title}>신청하기</h2>
+        <h2 className={styles.title}>강의 신청하기</h2>
         <p className={styles.desc}>아래 버튼을 눌러 신청서를 작성해 주세요. 새 탭에서 열립니다.</p>
         <a
           href={GOOGLE_FORM_URL}
