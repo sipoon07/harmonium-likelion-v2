@@ -1,5 +1,3 @@
-import React from "react";
-
 const items: string[] = [
   "채용 공고/직무 키워드 해석",
   "경험 인벤토리 작성 및 정리",

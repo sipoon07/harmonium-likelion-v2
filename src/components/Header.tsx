@@ -1,4 +1,3 @@
-import React from "react";  
 type NavItem = { id: string; label: string };
 
 const items: NavItem[] = [

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import CTAButton from "../components/CTAButton";
 
 export default function HeroSection(): JSX.Element {

@@ -1,4 +1,3 @@
-import React from "react";
 import FaqItem from "../components/FaqItem";
 
 const FAQS = [
