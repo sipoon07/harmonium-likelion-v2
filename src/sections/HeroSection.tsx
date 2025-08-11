@@ -29,7 +29,7 @@ export default function HeroSection() {
         <div className={styles.ctaRow}>
           {/* 같은 URL이더라도 onClick으로 스무스 스크롤 가로채기 */}
           <CTAButton href="#apply" onClick={goApply}>
-            바로 상담/신청하기
+            신청하기
           </CTAButton>
           <CTAButton href="#curriculum" variant="secondary" onClick={goCurriculum}>
             강의 자세히 보기
