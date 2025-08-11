@@ -14,6 +14,9 @@ export default function CurriculumSection() {
     <section id="curriculum" className={styles.wrap}>
       <div className={styles.inner}>
         <h2 className={styles.title}>커리큘럼</h2>
+        <span className={styles.subtitle}>
+        이론 중심의 자기소개서 작성 노하우를 단계별로 배웁니다.
+        </span>
         <ul className={styles.grid}>
           {items.map((t) => (
             <li key={t} className={styles.card}>{t}</li>
