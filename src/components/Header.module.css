@@ -8,7 +8,7 @@
   display:flex; gap:2.5rem; justify-content:center; align-items:center;
 }
 .link{
-  font-size:.875rem; letter-spacing:-.015em; padding:2px 4px; border-radius:4px;
+  font-size:.975rem; letter-spacing:-.015em; padding:2px 4px; border-radius:4px;
   transition:opacity .2s ease, box-shadow .2s ease;
 }
 .link:hover{opacity:.85}
