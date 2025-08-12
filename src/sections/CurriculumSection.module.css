@@ -1,6 +1,7 @@
 .wrap{ background:var(--bg-muted) }
 .inner{ max-width:64rem; margin:0 auto; padding:1.5rem 1.5rem }
 .title{ font-size:1.25rem; font-weight:800 }
+.subtitle{ color: #000000; }
 .grid{
   margin-top:1.25rem;
   display:grid; gap:2.5rem;
