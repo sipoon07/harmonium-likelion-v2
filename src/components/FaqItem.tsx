@@ -18,7 +18,10 @@ export default function FaqItem({ q, a }: Props) {
         <span className={styles.q}>{q}</span>
         <span className={styles.icon}>{open ? "−" : "+"}</span>
       </button>
-      <div id={id} className={`${styles.answer} ${open ? styles.show : ""}`}>
+      <div
+        id={id}
+        className={`${styles.answer} ${open ? styles.show : ""}`}
+      >
         <p>{a}</p>
       </div>
     </div>
