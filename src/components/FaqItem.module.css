@@ -1,43 +1,42 @@
-.item {
-  border: 1px solid #e5e7eb;
-  border-radius: var(--radius-xl);
-  background: #fff;
-  padding: 1.1rem 1.2rem;
-  box-shadow: var(--shadow-soft);
+.item{
+  border:1px solid #e5e7eb;
+  border-radius:var(--radius-xl);
+  background:#fff;
+  padding:1.1rem 1.2rem;
+  box-shadow:var(--shadow-soft);
 }
 
-.button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  padding: 0;
+.button{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:none;
+  border:none;
+  cursor:pointer;
+  text-align:left;
+  padding:0;
 }
 
-.q {
-  font-weight: 600;
+.q{ font-weight:600 }
+.icon{ font-size:1.2rem; line-height:1 }
+
+/* 부드러운 아코디언 애니메이션 */
+.answer{
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  transition:max-height .6s ease-in-out, opacity .6s ease-in-out;
+  will-change:max-height, opacity;
 }
 
-.icon {
-  font-size: 1.2rem;
-  line-height: 1;
+.show{
+  opacity:1;
 }
 
-/* 변경된 부분 */
-.answer {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  color: var(--text-soft);
-  line-height: 1.7;
-}
-
-.show {
-  max-height: 200px; /* 예상 답변 높이보다 살짝 크게 설정 */
-  opacity: 1;
+/* 실제 내용 패딩/타이포 */
+.content{
+  padding-top:.5rem;
+  color:var(--text-soft);
+  line-height:1.7;
 }

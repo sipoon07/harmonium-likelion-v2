@@ -1,3 +1,4 @@
+import { useState } from "react";
 import FaqItem from "../components/FaqItem";
 import styles from "./FaqSection.module.css";
 
@@ -8,13 +9,25 @@ const FAQS = [
 ];
 
 export default function FaqSection() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setActiveIndex(prev => (prev === index ? null : index));
+  };
+
   return (
     <section id="faq" className={styles.wrap}>
       <div className={styles.inner}>
         <h2 className={styles.title}>자주 묻는 질문</h2>
         <div className={styles.list}>
-          {FAQS.map((f) => (
-            <FaqItem key={f.q} q={f.q} a={f.a} />
+          {FAQS.map((f, i) => (
+            <FaqItem
+              key={f.q}
+              q={f.q}
+              a={f.a}
+              isOpen={activeIndex === i}
+              onToggle={() => handleToggle(i)}
+            />
           ))}
         </div>
       </div>
