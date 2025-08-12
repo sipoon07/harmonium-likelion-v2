@@ -9,6 +9,11 @@ export default function ApplySection() {
     <section id="apply" className={styles.wrap}>
       <div className={styles.inner}>
         <h2 className={styles.title}>강의 신청하기</h2>
+        <ul className={styles.infoList}>
+          <li><strong>모집기간:</strong> 2025. 08. 04. (월) 15:00 ~ 2025. 08. 06. (수) 15:00</li>
+          <li><strong>교육기간:</strong> 2025. 08. 07. (수) 14:00 ~ 16:00</li>
+          <li><strong>교육비:</strong> 무료</li>
+        </ul>
         <p className={styles.desc}>아래 버튼을 눌러 신청서를 작성해 주세요. 새 탭에서 열립니다.</p>
         <a
           href={GOOGLE_FORM_URL}

@@ -2,6 +2,22 @@
 .inner{ max-width:64rem; margin:0 auto; padding:1.5rem 1.5rem }
 .title{ font-size:1.25rem; font-weight:800 }
 
+.infoList {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  list-style: disc;
+  color: var(--text);
+}
+.infoList li {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.infoList strong {
+  font-weight: 600;
+}
+
 .desc{
   margin-top:.75rem;
   color:#000000; /* text-soft */
