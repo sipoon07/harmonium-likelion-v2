@@ -1,5 +1,8 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 :root{
+  --font-sans: 'Pretendard', ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif;
   --brand-900:#111827;
   --brand-700:#374151;
   --bg-muted:#f9fafb;
@@ -14,7 +17,7 @@
 html,body,#root{height:100%}
 body{
   margin:0;
-  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  font-family: var(--font-sans);
   color:var(--text);
   background:#fff;
   -webkit-font-smoothing:antialiased;
