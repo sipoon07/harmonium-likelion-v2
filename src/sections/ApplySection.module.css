@@ -3,11 +3,11 @@
 .title{ font-size:1.25rem; font-weight:800 }
 
 .infoPanel{
-  background:#141618;
-  color:#e5e7eb;
+  background:#f3f4f6; /* 연한 회색 (Tailwind gray-100) */
+  color:#1f2937; /* 텍스트 진회색 */
   border-radius:12px;
   overflow:hidden;
-  box-shadow:0 8px 24px rgba(0,0,0,.25);
+  box-shadow:0 4px 12px rgba(0,0,0,.08); /* 그림자도 부드럽게 */
   margin-bottom:1.25rem;
 }
 
