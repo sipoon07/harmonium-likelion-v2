@@ -38,7 +38,7 @@ export default function ApplySection() {
           </div>
         </div>
 
-        <p className={styles.desc}>아래 버튼을 눌러 신청서를 작성해 주세요. 새 탭에서 열립니다.</p>
+        <p className={styles.desc}>아래 버튼을 눌러 신청서를 작성해 주세요.<br/>새 탭에서 열립니다.</p>
         <a
           href={GOOGLE_FORM_URL}
           target="_blank"
