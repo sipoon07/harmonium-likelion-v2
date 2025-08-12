@@ -8,12 +8,36 @@ export default function ApplySection() {
   return (
     <section id="apply" className={styles.wrap}>
       <div className={styles.inner}>
-        <h2 className={styles.title}>강의 신청하기</h2>
-        <ul className={styles.infoList}>
-          <li><strong>모집기간:</strong> 2025. 08. 04. (월) 15:00 ~ 2025. 08. 06. (수) 15:00</li>
-          <li><strong>교육기간:</strong> 2025. 08. 07. (수) 14:00 ~ 16:00</li>
-          <li><strong>교육비:</strong> 무료</li>
-        </ul>
+        <h2 className={styles.title}>신청하기</h2>
+
+        {/* ▶ 어두운 정보 패널 */}
+        <div className={styles.infoPanel}>
+          {/* 모집기간 */}
+          <div className={styles.infoItem}>
+            <span className={styles.icon} aria-hidden>🖊️</span>
+            <span className={styles.label}>모집기간</span>
+            <span className={styles.value}>
+              2025. 08. 04. (월) 15:00 ~ 2025. 08. 06. (수) 15:00
+            </span>
+          </div>
+
+          {/* 교육기간 */}
+          <div className={styles.infoItem}>
+            <span className={styles.icon} aria-hidden>📅</span>
+            <span className={styles.label}>교육기간</span>
+            <span className={styles.value}>
+              2025. 08. 07. (수) 14:00 ~ 16:00
+            </span>
+          </div>
+
+          {/* 교육비 (무료로 단순 표기) */}
+          <div className={styles.infoItem}>
+            <span className={styles.icon} aria-hidden>💰</span>
+            <span className={styles.label}>교육비</span>
+            <span className={styles.value}>무료</span>
+          </div>
+        </div>
+
         <p className={styles.desc}>아래 버튼을 눌러 신청서를 작성해 주세요. 새 탭에서 열립니다.</p>
         <a
           href={GOOGLE_FORM_URL}

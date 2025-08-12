@@ -2,21 +2,31 @@
 .inner{ max-width:64rem; margin:0 auto; padding:1.5rem 1.5rem }
 .title{ font-size:1.25rem; font-weight:800 }
 
-.infoList {
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  list-style: disc;
-  color: var(--text);
+.infoPanel{
+  background:#141618;
+  color:#e5e7eb;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+  margin-bottom:1.25rem;
 }
-.infoList li {
-  margin-bottom: 0.25rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
+
+.infoItem{
+  display:flex; align-items:center;
+  padding:1rem 1rem;
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
-.infoList strong {
-  font-weight: 600;
+.infoItem:last-child{ border-bottom:none; }
+
+.icon{
+  flex:0 0 28px; text-align:center; font-size:1.05rem; opacity:.9;
+  margin-right:.5rem;
 }
+.label{
+  flex:0 0 110px;
+  font-weight:700; color:#f3f4f6;
+}
+.value{ flex:1; color:#cbd5e1; }
 
 .desc{
   margin-top:.75rem;
