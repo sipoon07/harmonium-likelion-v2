@@ -24,7 +24,7 @@ export default function ApplySection() {
           {/* 교육기간 */}
           <div className={styles.infoItem}>
             <span className={styles.icon} aria-hidden>📅</span>
-            <span className={styles.label}>교육기간</span>
+            <span className={styles.label}>강의기간</span>
             <span className={styles.value}>
               2025. 08. 07. (수) 14:00 ~ 16:00
             </span>
@@ -33,7 +33,7 @@ export default function ApplySection() {
           {/* 교육비 (무료로 단순 표기) */}
           <div className={styles.infoItem}>
             <span className={styles.icon} aria-hidden>💰</span>
-            <span className={styles.label}>교육비</span>
+            <span className={styles.label}>강의비용</span>
             <span className={styles.value}>무료</span>
           </div>
         </div>
