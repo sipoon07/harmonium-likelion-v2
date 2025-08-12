@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import CTAButton from "../components/CTAButton";
 import { smoothScrollToId } from "../lib/scroll";
+import Typewriter from "../components/Typewriter";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -21,11 +22,16 @@ export default function HeroSection() {
   return (
     <section id="about" className={styles.wrap}>
       <div className={styles.inner}>
-        <h1 className={styles.title}>
-          아직도 혼자서 자기소개서를 작성하시나요?
-          <br className={styles.br} /> 이 강의를 들어보시고 생성형 AI 자기소개서를 작성해보세요!
-        </h1>
-
+        <Typewriter
+          className={styles.title}
+          lines={[
+            "아직도 혼자서 자기소개서를 작성하시나요?",
+            "이 강의를 들어보시고 생성형 AI 자기소개서를 작성해보세요!"
+          ]}
+          typingSpeed={42}
+          startDelay={200}
+          linePause={600}
+        />
         <div className={styles.ctaRow}>
           {/* 같은 URL이더라도 onClick으로 스무스 스크롤 가로채기 */}
           <CTAButton href="#apply" onClick={goApply}>

@@ -1,0 +1,16 @@
+.wrap { display: inline-block }
+.line {
+  /* 줄 간격과 단어 줄바꿈 */
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+.caret {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(1, end) infinite;
+  opacity: .9;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1 }
+  50.01%, 100% { opacity: 0 }
+}
