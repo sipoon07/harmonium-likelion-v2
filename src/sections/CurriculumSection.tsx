@@ -1,12 +1,10 @@
 import styles from "./CurriculumSection.module.css";
 
 const items = [
-  "채용 공고/직무 키워드 해석",
-  "경험 인벤토리 작성 및 정리",
-  "STAR/BEI 기반 스토리 구조화",
-  "문항 유형별 템플릿 & 실습",
-  "표현 다듬기와 가독성 향상",
-  "실전 피드백과 보완 계획",
+  "자기소개서 작성 시 유의점",
+  "생성형 AI 기반 자기소개서\n작성 전략 수립 방법",
+  "생성형 AI 기반 자기소개서\n초안 작성 방법",
+  "자기소개서 수정/탈고 방법"
 ];
 
 export default function CurriculumSection() {
