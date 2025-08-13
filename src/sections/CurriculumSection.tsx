@@ -17,7 +17,10 @@ export default function CurriculumSection() {
         </span>
         <ul className={styles.grid}>
           {items.map((t) => (
-            <li key={t} className={styles.card}>{t}</li>
+            <li key={t} className={styles.card}>
+              <span className="{styles.icon}">✅&nbsp;&nbsp;</span>
+              <span className="{styles.text">{t}</span>
+            </li>
           ))}
         </ul>
       </div>
