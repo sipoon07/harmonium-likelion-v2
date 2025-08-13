@@ -32,10 +32,11 @@
   margin-top:.75rem;
   color:#000000; /* text-soft */
   line-height:1.7;
+  text-align: center;
 }
 
 .submit{
-  display:inline-flex; align-items:center; justify-content:center;
+  display:flex; align-items:center; justify-content:center;
   margin-top:1.35rem;
   border:none; border-radius:var(--radius-xl);
   background:var(--brand-900); color:#fff;
@@ -43,5 +44,5 @@
   box-shadow:var(--shadow-soft); cursor:pointer;
   transition:transform .08s ease, box-shadow .2s ease, opacity .2s ease;
 }
-.submit:hover{ opacity:.95; box-shadow:0 10px 24px rgba(0,0,0,.12) }
+.submit:hover{ opacity:.95; box-shadow:0 10px 24px rgba(0, 0, 0, 0.12) }
 .submit:active{ transform:translateY(1px) }
