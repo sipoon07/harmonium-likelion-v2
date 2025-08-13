@@ -13,25 +13,31 @@ const items: NavItem[] = [
 export default function Header() {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    smoothScrollToId(id, { duration: 600, offset: 8 }); // 속도/오프셋 취향대로
-    // URL 해시도 갱신 (뒤로가기 동작, 북마크 등 편의)
+    smoothScrollToId(id, { duration: 600, offset: 8 });
     history.pushState(null, "", `#${id}`);
   };
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
-        {items.map((it) => (
-          <a
-            key={it.id}
-            href={`#${it.id}`}
-            className={styles.link}
-            onClick={(e) => handleClick(e, it.id)}
-          >
-            {it.label}
-          </a>
-        ))}
-      </nav>
+      <div className={styles.inner}>
+        {/* ✅ import한 로고 사용 */}
+        <a href="/" className={styles.logo} aria-label="홈으로 이동">
+          <img src="https://likelion.net/img/likelion_kor_logo_renew.svg" alt="사이트 로고" />
+        </a>
+
+        <nav className={styles.nav}>
+          {items.map((it) => (
+            <a
+              key={it.id}
+              href={`#${it.id}`}
+              className={styles.link}
+              onClick={(e) => handleClick(e, it.id)}
+            >
+              {it.label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }

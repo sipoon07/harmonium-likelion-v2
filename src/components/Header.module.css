@@ -1,15 +1,38 @@
 .header{
   position:sticky; top:0; z-index:50;
   background:var(--brand-700); color:#f3f4f6;
+  background-color: #ffffff;
   backdrop-filter:saturate(180%) blur(6px);
 }
+
+/* 새로 추가: 내부 컨테이너 (왼쪽 정렬) */
+.inner{
+  max-width:64rem; margin:0 auto; padding:.75rem 1rem;
+  display:flex; align-items:center; justify-content: fl; gap:1rem;
+}
+
+/* 로고 */
+.logo img{
+  height:16px; width:auto; display:block;
+}
+
+/* 네비게이션: 왼쪽 정렬로 변경 */
 .nav{
-  max-width:64rem; margin:0 auto; padding:.75rem 0;
-  display:flex; gap:2.5rem; justify-content:center; align-items:center;
+  display:flex; align-items:center; gap:1rem;
+  /* 남은 공간 차지해서 로고 오른쪽으로 자연스레 붙음 */
+  margin-left:.25rem;
 }
+
 .link{
-  font-family:'Pretendard'; font-size:1rem; letter-spacing:-.015em; padding:2px 4px; border-radius:4px;
+  font-family:'Pretendard'; font-size:1rem; letter-spacing:-.015em;
+  padding:4px 6px; border-radius:4px;
   transition:opacity .2s ease, box-shadow .2s ease;
+  color:#000000; text-decoration:none;
 }
-.link:hover{opacity:.85}
-.link:focus{outline:2px solid #fff8; outline-offset:2px}
+.link:hover{ opacity:.85 }
+.link:focus{ outline:2px solid #fff8; outline-offset:2px }
+
+/* 좁은 화면에서 메뉴가 너무 붙으면 줄바꿈 허용 */
+@media (max-width:640px){
+  .nav{ flex-wrap:wrap; gap:.5rem }
+}
