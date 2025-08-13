@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import HeroSection from "./sections/HeroSection";
 import OverviewSection from "./sections/OverviewSection";
 import CurriculumSection from "./sections/CurriculumSection";
+import InstructorSection from "./sections/InstructorSection";
 import ApplySection from "./sections/ApplySection";
 import FaqSection from "./sections/FaqSection";
 import styles from "./App.module.css";
@@ -13,6 +14,7 @@ export default function App() {
       <HeroSection />
       <OverviewSection />
       <CurriculumSection />
+      <InstructorSection />
       <ApplySection />
       <FaqSection />
       <footer className={styles.footer}>
