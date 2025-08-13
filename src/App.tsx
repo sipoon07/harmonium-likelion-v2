@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import HeroSection from "./sections/HeroSection";
+import OverviewSection from "./sections/OverviewSection";
 import CurriculumSection from "./sections/CurriculumSection";
 import ApplySection from "./sections/ApplySection";
 import FaqSection from "./sections/FaqSection";
@@ -10,6 +11,7 @@ export default function App() {
     <div className={styles.app}>
       <Header />
       <HeroSection />
+      <OverviewSection />
       <CurriculumSection />
       <ApplySection />
       <FaqSection />

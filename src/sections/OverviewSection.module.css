@@ -1,0 +1,46 @@
+.wrap {
+  background: var(--bg-muted);
+  padding: 2rem 1.5rem;
+}
+
+.inner {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.value {
+  color: #374151;
+}
