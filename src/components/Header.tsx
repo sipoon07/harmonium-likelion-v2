@@ -4,8 +4,10 @@ import { smoothScrollToId } from "../lib/scroll";
 type NavItem = { id: string; label: string };
 
 const items: NavItem[] = [
-  { id: "about", label: "강의소개" },
+  /*{ id: "", label: "" },*/
+  { id: "overview", label: "강의개요" },
   { id: "curriculum", label: "커리큘럼" },
+  { id: "instructor", label: "강사소개" },
   { id: "apply", label: "신청하기" },
   { id: "faq", label: "FAQ" },
 ];
