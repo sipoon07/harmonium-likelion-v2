@@ -6,7 +6,7 @@
   text-align:center; display:grid; place-items:center;
 }
 .title{
-  font-size:clamp(1.5rem, 2vw + 1rem, 2rem);
+  font-size:clamp(1.3rem, 2vw + 1rem, 2rem);
   font-weight:700; line-height:1.35; letter-spacing:-.02em;
 }
 .br{ display:none }
