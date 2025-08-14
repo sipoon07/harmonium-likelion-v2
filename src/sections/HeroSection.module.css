@@ -6,7 +6,7 @@
   text-align:center; display:grid; place-items:center;
 }
 .title{
-  font-size:clamp(1.3rem, 2vw + 1rem, 2rem);
+  font-size:clamp(1.5rem, 2vw + 1rem, 2rem);
   font-weight:700; line-height:1.35; letter-spacing:-.02em;
 }
 .br{ display:none }
@@ -18,4 +18,10 @@
 }
 @media (min-width:640px){
   .ctaRow{ flex-direction:row }
+}
+/* 기존 코드 아래쪽에 추가 */
+@media (max-width: 640px) {
+  .title {
+    white-space: pre-line; /* 줄바꿈 문자 인식 */
+  }
 }

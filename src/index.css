@@ -24,3 +24,11 @@ body{
   -moz-osx-font-smoothing:grayscale;
 }
 a{color:inherit;text-decoration:none}
+
+.brDesktop { display: inline; }
+.brMobile  { display: none; }
+
+@media (max-width: 640px) {
+  .brDesktop { display: none; }
+  .brMobile  { display: inline; }
+}

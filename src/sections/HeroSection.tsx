@@ -25,8 +25,8 @@ export default function HeroSection() {
         <Typewriter
           className={styles.title}
           lines={[
-            "아직도 혼자서 자기소개서를 작성하시나요?",
-            "이 강의를 들어보시고 생성형 AI 자기소개서를 작성해보세요!"
+            "아직도 혼자서 자기소개서를\n작성하시나요?",
+            "이 강의를 들어보시고\n생성형 AI 자기소개서를 작성해보세요!"
           ]}
           typingSpeed={42}
           startDelay={200}
