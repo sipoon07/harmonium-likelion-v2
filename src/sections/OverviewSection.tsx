@@ -9,6 +9,11 @@ export default function OverviewSection() {
         2025. 08. 04. (월) 15:00 ~ <br className={styles.mobileBreak} /> 2025. 08. 06. (수) 15:00
       </>
     )},
+    { icon: "👤", label: "참가 대상", value: (
+      <>
+        20~30대 취업 준비생 및<br className={styles.mobileBreak} /> 이직을 준비하는 분
+      </> 
+    )},
     { icon: "💰", label: "참가 비용", value: "무료" },
   ];
 
