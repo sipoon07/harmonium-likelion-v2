@@ -43,4 +43,18 @@
 
 .value {
   color: #374151;
+  white-space: nowrap;
+}
+
+.mobileBreak {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .value {
+    white-space: normal;
+  }
+  .mobileBreak {
+    display: inline;
+  }
 }
