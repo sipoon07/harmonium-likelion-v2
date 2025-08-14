@@ -1,38 +1,68 @@
 .header{
-  position:sticky; top:0; z-index:50;
-  background:var(--brand-700); color:#f3f4f6;
-  background-color: #ffffff;
-  backdrop-filter:saturate(180%) blur(6px);
+  position: sticky; top: 0; z-index: 50;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: saturate(180%) blur(6px);
 }
 
-/* 새로 추가: 내부 컨테이너 (왼쪽 정렬) */
+/* 컨테이너 */
 .inner{
-  max-width:64rem; margin:0 auto; padding:.75rem 1rem;
-  display:flex; align-items:center; justify-content: fl; gap:1rem;
+  max-width: 64rem; margin: 0 auto; padding: .75rem 1rem;
+  display: flex; align-items: center; gap: 1rem;
+  justify-content: flex-start; /* ← 'fl' 오타 수정 */
 }
 
 /* 로고 */
-.logo img{
-  height:16px; width:auto; display:block;
-}
+.logo img{ height: 18px; width: auto; display: block; }
 
-/* 네비게이션: 왼쪽 정렬로 변경 */
+/* 데스크탑 네비 (그대로) */
 .nav{
-  display:flex; align-items:center; gap:1rem;
-  /* 남은 공간 차지해서 로고 오른쪽으로 자연스레 붙음 */
-  margin-left:.25rem;
+  display: flex; align-items: center; gap: 1rem;
+  margin-left: .25rem;
 }
-
 .link{
-  font-family:'Pretendard'; font-size:1rem; letter-spacing:-.015em;
-  padding:4px 6px; border-radius:4px;
-  transition:opacity .2s ease, box-shadow .2s ease;
-  color:#000000; text-decoration:none;
+  font-family: 'Pretendard';
+  font-size: 1rem; letter-spacing: -.015em;
+  padding: 4px 6px; border-radius: 4px;
+  color: #000; text-decoration: none;
+  transition: opacity .2s ease, box-shadow .2s ease;
 }
-.link:hover{ opacity:.85 }
-.link:focus{ outline:2px solid #fff8; outline-offset:2px }
+.link:hover{ opacity: .85; }
+.link:focus{ outline: 2px solid #fff8; outline-offset: 2px; }
 
-/* 좁은 화면에서 메뉴가 너무 붙으면 줄바꿈 허용 */
-@media (max-width:640px){
-  .nav{ flex-wrap:wrap; gap:.5rem }
+/* 햄버거 버튼: 데스크탑에서 숨김, 모바일에서 표시 */
+.hamburger{
+  display: none;
+  background: none; border: none; padding: .25rem; cursor: pointer;
+  margin-left: auto;
+}
+.bar{
+  display: block; width: 22px; height: 2px; background: #1f2937;
+  margin: 4px 0; border-radius: 1px;
+}
+
+/* 모바일 드롭다운 패널 */
+.mobilePanel{
+  display: none;
+  position: absolute; left: 0; right: 0; top: 100%;
+  background: #fff; border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+.mobileLink{
+  display: block; padding: .9rem 1rem;
+  color: #374151; text-decoration: none;
+  border-top: 1px solid #f3f4f6;
+}
+.mobileLink:hover{ background: #f9fafb; }
+
+/* 오버레이 */
+.backdrop{
+  position: fixed; inset: 0; background: rgba(0,0,0,.25);
+}
+
+/* ✅ 모바일 전용 규칙 */
+@media (max-width: 640px){
+  .nav{ display: none; }           /* 데스크탑 네비 숨김 */
+  .hamburger{ display: inline-block; } /* 햄버거 표시 */
+  .mobilePanel.show{ display: block; }  /* 패널 열기 */
 }
