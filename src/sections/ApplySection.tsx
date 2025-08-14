@@ -9,7 +9,7 @@ export default function ApplySection() {
     <section id="apply" className={styles.wrap}>
       <div className={styles.inner}>
         <h2 className={styles.title}>신청하기</h2>
-        <h2 className={styles.desc}>망설임은 신청을 늦출 뿐!<br/>지금 바로 아래 버튼을 눌러 강의 신청해 보세요!</h2>
+        <h2 className={styles.desc}>망설임은 신청을 늦출 뿐!<br/>지금 바로 아래 버튼을 눌러 <br/>강의를 신청 해보세요!</h2>
         <a
           href={GOOGLE_FORM_URL}
           target="_blank"
